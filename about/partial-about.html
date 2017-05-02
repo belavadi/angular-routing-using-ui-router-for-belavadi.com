@@ -5,32 +5,50 @@
         <h1>
             Prahalad Belavadi
         </h1>
-        <img src="/images/linkedin.jpg" class="img-rounded">
+        <img src="/images/linkedin.jpg" class="img-rounded img-circle">
         <hr>
         <p>
-            <span class="text-primary">
-                Minimalist.
-                Perfectionist.
-                Protagonist.
-            </span>
 
+            <span class="rotate text-primary">
+                Minimalist | Perfectionist | Protagonist.
+            </span>
          </p>
 
 </div>
-<div class="col-md-12">
-<div class="col-md-6">
-    <a ui-sref=".work" class="btn btn-success btn-block">
-        Work
-    </a>
 
+<div class="container">
+  <!-- <h2>Basic Panel</h2> -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+        <!-- <div class="col-md-12"> -->
+        <div class="col-md-6">
+            <a ui-sref=".work" class="btn btn-success btn-block">
+                Work
+            </a>
+
+        </div>
+        <div class="col-md-6">
+            <a ui-sref=".contact" class="btn btn-primary btn-block">
+                Contact
+            </a>
+        </div>
+        <!-- </div> -->
+    </div>
+  </div>
 </div>
-<div class="col-md-6">
-    <a ui-sref=".contact" class="btn btn-primary btn-block">
-        Contact
-    </a>
-</div>
-</div>
+
+
 
 <div class="container-fluid" ui-view>
-
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $(".rotate").textrotator(
+    {
+        animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+        separator: "|", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+        speed: 1250 // How many milliseconds until the next word show.
+    }
+);
+});
+</script>

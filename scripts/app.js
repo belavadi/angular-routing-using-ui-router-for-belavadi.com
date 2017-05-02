@@ -52,7 +52,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })
         .state('about.work',{
             url:'/work',
-            templateUrl:'partial-about-work.html'
+            templateUrl:'/about/partial-about-work.html'
+        })
+        .state('about.contact',{
+            url:'/contact',
+            templateUrl:'/about/partial-about-contact.html'
         });
 });
 
