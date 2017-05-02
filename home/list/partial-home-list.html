@@ -1,0 +1,38 @@
+<!-- partial-home-list.html -->
+
+<div class="jumbotron">
+
+    <div class="table-responsive">
+        <table class="table table-hover .table-bordered">
+
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Link to the Answer</th>
+                <th>Direct</th>
+              </tr>
+            </thead>
+            
+            <tr ng-repeat="article in articles">
+              <td>
+                  {{article.q}}
+              </td>
+              <td>
+                  <a href="ng-href='{{article.src}}'">
+                      {{article.src}}
+                  </a>
+              </td>
+              <td>
+                  <button
+                    type="button"
+                    class="btn-primary btn">
+                      Link
+                  </button>
+              </td>
+            </tr>
+
+        </table>
+    </div>
+
+
+</div>
