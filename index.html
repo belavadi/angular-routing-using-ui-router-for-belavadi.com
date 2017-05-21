@@ -24,7 +24,9 @@
     <script src="/scripts/app.js"></script>
     <script src="/bower_components/jquery.simple-text-rotator/jquery.simple-text-rotator.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 </head>
 
 <!-- apply our angular app to our site -->
@@ -57,11 +59,17 @@
             </a>
         </li>
 
-        <!-- <li>
-            <a ui-sref="contact">
-                Contact
+        <li>
+            <a ui-sref="workspace">
+                Workspace
             </a>
-        </li> -->
+        </li>
+
+        <li>
+            <a ui-sref="tutorials">
+                Tutorials
+            </a>
+        </li>
 
 
     </ul>
@@ -73,12 +81,14 @@
     <div ui-view></div>
 
 </div>
+
+
 <hr>
 <footer>
     <div class="footer">
         All Rights Reserved &copy; 2017
     </div>
 </footer>
-
+<hr>
 </body>
 </html>
