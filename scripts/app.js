@@ -47,9 +47,17 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/about',
             templateUrl: '/about/partial-about.html'
         })
-        .state('calendar',{
-            url:'/calendar',
-            templateUrl:'/calendar/partial-calendar.html'
+        .state('resources',{
+            url:'/resources',
+            templateUrl: '/resources/partial-resource.html'
+        })
+        // .state('calendar',{
+        //     url:'/calendar',
+        //     templateUrl:'/calendar/partial-calendar.html'
+        // })
+        .state('about.calendar',{
+            url: '/calendar',
+            templateUrl:'/about/partial-about-calendar.html'
         })
         .state('about.initiative',{
             url:'/initiative',

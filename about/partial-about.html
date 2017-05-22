@@ -21,11 +21,14 @@
   <div class="panel panel-default">
     <div class="panel-body">
         <!-- <div class="col-md-12"> -->
-        <div class="col-md-12" toggle>
+        <div class="col-md-6">
             <a ui-sref=".initiative" class="btn waves-effect waves-light btn-block">
                 Initiatives
             </a>
 
+        </div>
+        <div class="col-md-6">
+            <a ui-sref=".calendar" class="btn waves-effect waves-light btn-block">Track Progress</a>
         </div>
         <!-- <div class="col-md-6">
             <a ui-sref=".contact" class="btn waves-effect waves-light btn-block">
@@ -42,9 +45,10 @@
 
 <div class="container-fluid" ui-view>
 </div>
-
-<a class="twitter-timeline" href="https://twitter.com/prahaladbelavad">Tweets by prahaladbelavad</a>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="jumbotron">
+    <a class="twitter-timeline" href="https://twitter.com/prahaladbelavad">Tweets by prahaladbelavad</a>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 <script type="text/javascript">
     $(document).ready(function(){
     $(".rotate").textrotator(
