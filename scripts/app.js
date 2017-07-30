@@ -55,42 +55,43 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         //     url:'/calendar',
         //     templateUrl:'/calendar/partial-calendar.html'
         // })
-        .state('about.calendar',{
-            url: '/calendar',
-            templateUrl:'/about/partial-about-calendar.html'
+        // .state('about.calendar',{
+        //     url: '/calendar',
+        //     templateUrl:'/about/partial-about-calendar.html'
+        // })
+        .state('about.twitter',{
+            url:'/twitter',
+            templateUrl:'/about/partial-about-twitter.html'
         })
-        .state('about.initiative',{
-            url:'/initiative',
-            templateUrl:'/about/partial-about-initiative.html'
-        })
-        .state('about.contact',{
-            url:'/contact',
-            templateUrl:'/about/partial-about-contact.html'
-        })
+        // .state('about.contact',{
+        //     url:'/contact',
+        //     templateUrl:'/about/partial-about-contact.html'
+        // })
         .state('blog', {
             url: '/blog',
             templateUrl: '/blog/partial-blog.html'
         });
 });
 
-// let's define the scotch controller that we call up in the about state
-routerApp.controller('scotchController', function($scope) {
-
-    $scope.message = 'test';
-
-    $scope.scotches = [
-        {
-            name: 'Macallan 12',
-            price: 50
-        },
-        {
-            name: 'Chivas Regal Royal Salute',
-            price: 10000
-        },
-        {
-            name: 'Glenfiddich 1937',
-            price: 20000
-        }
-    ];
-
-});
+// let's define the qualifications controller that we call up in the about state
+// routerApp.controller('qualifications', function($scope) {
+//
+//     $scope.qualification = [
+//         {
+//             Name: 'Data Science',
+//             issuedBy: 'MIT',
+//             url: 'value'
+//         },
+//         {
+//             Name: 'Data Science',
+//             issuedBy: 'MIT',
+//             url: 'value'
+//         },
+//         {
+//             Name: 'Data Science',
+//             issuedBy: 'MIT',
+//             url: 'value'
+//         }
+//     ];
+//
+// });

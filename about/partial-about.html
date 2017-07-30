@@ -1,10 +1,11 @@
 <!-- partial-about.html -->
 
 <div class="jumbotron text-center">
-
-        <h1>
-            Prahalad Belavadi
-        </h1>
+    <div class="well well-sm">
+                <h1>
+                    Prahalad Belavadi
+                </h1>
+    </div>
         <img src="/images/googleNicolas.jpg" class="img-rounded img-circle">
         <hr>
         <p>
@@ -13,50 +14,34 @@
                 Minimalist | Perfectionist | Protagonist.
             </span>
          </p>
-         <a href="https://twitter.com/prahaladbelavad" class="twitter-follow-button" data-show-count="false">Follow @prahaladbelavad</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+         <a href="https://twitter.com/prahaladbelavad" class="twitter-follow-button" data-show-count="false">
+             Follow @prahaladbelavad
+         </a>
+<hr>
+         <div class="text-center">
+                 <div class="col-md-12">
+                     <a ui-sref=".twitter" class="btn waves-effect waves-light btn-block">
+                         Twitter
+                     </a>
+                 </div>
+                 <!-- <div class="col-md-4">
+                     <a ui-sref=".qualifications" class="btn waves-effect waves-light btn-block">
+                         Qualifications
+                     </a>
+                 </div>
+                 <div class="col-md-4">
+                     <a ui-sref=".calendar" class="btn waves-effect waves-light btn-block">
+                         Track Progress
+                     </a>
+                 </div>
+                  <div class="col-md-6">
+                     <a ui-sref=".contact" class="btn waves-effect waves-light btn-block">
+                         Contact
+                     </a>
+                 </div> -->
+           </div>
 </div>
-
-<div class="container">
-  <!-- <h2>Basic Panel</h2> -->
-  <div class="panel panel-default">
-    <div class="panel-body">
-        <!-- <div class="col-md-12"> -->
-        <div class="col-md-6">
-            <a ui-sref=".initiative" class="btn waves-effect waves-light btn-block">
-                Initiatives
-            </a>
-
-        </div>
-        <div class="col-md-6">
-            <a ui-sref=".calendar" class="btn waves-effect waves-light btn-block">Track Progress</a>
-        </div>
-        <!-- <div class="col-md-6">
-            <a ui-sref=".contact" class="btn waves-effect waves-light btn-block">
-                Contact
-            </a>
-        </div> -->
-        <hr>
-
-    </div>
-  </div>
-</div>
-
 
 
 <div class="container-fluid" ui-view>
 </div>
-<div class="jumbotron">
-    <a class="twitter-timeline" href="https://twitter.com/prahaladbelavad">Tweets by prahaladbelavad</a>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<script type="text/javascript">
-    $(document).ready(function(){
-    $(".rotate").textrotator(
-    {
-        animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-        separator: "|", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-        speed: 1250 // How many milliseconds until the next word show.
-    }
-);
-});
-</script>
