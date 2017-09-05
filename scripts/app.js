@@ -35,10 +35,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })
 
         // nested list with just some random string data
-        .state('home.paragraph', {
-            url: '/paragraph',
-            template: 'I could sure use a drink right now.'
-        })
+        // .state('home.paragraph', {
+        //     url: '/paragraph',
+        //     template: 'I could sure use a drink right now.'
+        // })
 //
 
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS
@@ -51,10 +51,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url:'/resources',
             templateUrl: '/resources/partial-resource.html'
         })
-        // .state('calendar',{
-        //     url:'/calendar',
-        //     templateUrl:'/calendar/partial-calendar.html'
-        // })
+
+        .state('calendar',{
+            url:'/calendar',
+            templateUrl:'/calendar/partial-calendar.html'
+        })
         // .state('about.calendar',{
         //     url: '/calendar',
         //     templateUrl:'/about/partial-about-calendar.html'
